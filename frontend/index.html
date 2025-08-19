@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Library Frontend</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Library</h1>
+    <div class="card">
+      <label for="isbn">ISBN ile Ekle</label>
+      <div class="row">
+        <input id="isbn" type="text" placeholder="9780140328721" />
+        <button id="addBtn">Ekle</button>
+      </div>
+      <p id="msg" class="msg"></p>
+    </div>
+
+    <div class="card">
+      <h2>Kitaplar</h2>
+      <ul id="books" class="list"></ul>
+    </div>
+  </div>
+
+  <script>
+    const API = "http://127.0.0.1:8000"; // uvicorn api:app --reload
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
